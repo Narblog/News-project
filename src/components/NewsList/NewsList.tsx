@@ -3,6 +3,7 @@ import styles from './NewsList.module.css'
 import NewsCard from '../NewsCard'
 import { NewsListProps } from './NewsList.interface'
 import { NewsCardProps } from '../NewsCard/NewsCard.interface'
+import Comment from 'components/Comment'
 
 const NewsList: React.FC<NewsListProps> = ({ news }) => {
   return (
@@ -13,6 +14,7 @@ const NewsList: React.FC<NewsListProps> = ({ news }) => {
           <div className={styles.card} key={item.id}><NewsCard {...item} /></div>
         )
       }
+      
 
     </div>
   )
